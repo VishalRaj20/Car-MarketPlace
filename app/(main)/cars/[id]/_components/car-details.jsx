@@ -274,62 +274,64 @@ const CarDetails = ({ car, testDriveInfo }) => {
             </div>
 
             <div className="mt-8 p-6 bg-white rounded-lg hover:shadow-sm transition-shadow duration-300">
-                <h2 className=' text-gray-900 font-bold text-lg flex items-center gap-2'>
-                    <span className='text-2xl font-bold'>Specifications</span>
+                <h2 className="text-gray-900 font-bold text-lg flex items-center gap-2">
+                    <span className="text-2xl font-bold">Specifications</span>
                 </h2>
-                <div className='grid grid-cols-1 lg:grid-cols-2 mt-4 p-6 rounded-lg shadow-md bg-gray-50'>
-                    <div className=' gap-6 mt-4 mr-16'>
-                        <div className='flex items-center justify-between gap-4 py-1 border-b'>
-                            <span className='text-gray-700'>Make</span>
-                            <span className='text-gray-900 font-semibold'>{car.make}</span>
 
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-4 p-4 sm:p-6 rounded-lg shadow-md bg-gray-50">
+                    {/* Left Column */}
+                    <div className="flex flex-col gap-4">
+                        <div className="flex items-center justify-between gap-4 py-1 border-b">
+                            <span className="text-gray-700">Make</span>
+                            <span className="text-gray-900 font-semibold">{car.make}</span>
                         </div>
-                        <div className='flex items-center justify-between gap-4 mt-2 py-1 border-b'>
-                            <span className='text-gray-700'>Year</span>
-                            <span className='text-gray-900 font-semibold'>{car.year}</span>
+                        <div className="flex items-center justify-between gap-4 py-1 border-b">
+                            <span className="text-gray-700">Year</span>
+                            <span className="text-gray-900 font-semibold">{car.year}</span>
                         </div>
-                        <div className='flex items-center justify-between gap-4 mt-2 py-1 border-b'>
-                            <span className='text-gray-700'>Fuel Type</span>
-                            <span className='text-gray-900 font-semibold'>{car.fuelType}</span>
+                        <div className="flex items-center justify-between gap-4 py-1 border-b">
+                            <span className="text-gray-700">Fuel Type</span>
+                            <span className="text-gray-900 font-semibold">{car.fuelType}</span>
                         </div>
-                        <div className='flex items-center justify-between gap-4 mt-2 py-1 border-b'>
-                            <span className='text-gray-700'>Mileage</span>
-                            <span className='text-gray-900 font-semibold'>{car.mileage.toLocaleString()} miles</span>
+                        <div className="flex items-center justify-between gap-4 py-1 border-b">
+                            <span className="text-gray-700">Mileage</span>
+                            <span className="text-gray-900 font-semibold">{car.mileage.toLocaleString()} miles</span>
                         </div>
                         {car.seats && (
-                            <div className="flex justify-between py-2 border-b">
-                                <span className="text-gray-600">Seats</span>
-                                <span className="font-medium">{car.seats}</span>
+                            <div className="flex items-center justify-between gap-4 py-1 border-b">
+                                <span className="text-gray-700">Seats</span>
+                                <span className="text-gray-900 font-semibold">{car.seats}</span>
                             </div>
                         )}
                     </div>
-                    <div className=' gap-6 mt-4 ml-16'>
-                        <div className='flex items-center justify-between gap-4 py-1 border-b'>
-                            <span className='text-gray-700'>Model</span>
-                            <span className='text-gray-900 font-semibold'>{car.model}</span>
+
+                    {/* Right Column */}
+                    <div className="flex flex-col gap-4">
+                        <div className="flex items-center justify-between gap-4 py-1 border-b">
+                            <span className="text-gray-700">Model</span>
+                            <span className="text-gray-900 font-semibold">{car.model}</span>
                         </div>
-                        <div className='flex items-center justify-between gap-4 mt-2 py-1 border-b'>
-                            <span className='text-gray-700'>Body Type</span>
-                            <span className='text-gray-900 font-semibold'>{car.bodyType}</span>
+                        <div className="flex items-center justify-between gap-4 py-1 border-b">
+                            <span className="text-gray-700">Body Type</span>
+                            <span className="text-gray-900 font-semibold">{car.bodyType}</span>
                         </div>
-                        <div className='flex items-center justify-between gap-4 mt-2 py-1 border-b'>
-                            <span className='text-gray-700'>Transmission</span>
-                            <span className='text-gray-900 font-semibold'>{car.transmission}</span>
+                        <div className="flex items-center justify-between gap-4 py-1 border-b">
+                            <span className="text-gray-700">Transmission</span>
+                            <span className="text-gray-900 font-semibold">{car.transmission}</span>
                         </div>
-                        <div className='flex items-center justify-between gap-4 mt-2 py-1 border-b'>
-                            <span className='text-gray-700'>Color</span>
-                            <span className='text-gray-900 font-semibold'>{car.color}</span>
-                        </div>
-                        <div>
+                        <div className="flex items-center justify-between gap-4 py-1 border-b">
+                            <span className="text-gray-700">Color</span>
+                            <span className="text-gray-900 font-semibold">{car.color}</span>
                         </div>
                     </div>
                 </div>
             </div>
+
             {/* Dealership Location Section */}
             <div className="mt-8 p-6 bg-white rounded-lg shadow-sm">
                 <h2 className="text-2xl font-bold mb-6">Dealership Location</h2>
                 <div className="bg-gray-50 rounded-lg p-6">
-                    <div className="flex flex-col md:flex-row gap-6 justify-between">
+                    <div className="flex flex-col md:flex-row gap-8 justify-between">
                         {/* Dealership Name and Address */}
                         <div className="flex items-start gap-3">
                             <LocateFixed className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />

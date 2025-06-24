@@ -4,16 +4,15 @@ import CarFilters from './_components/car-filter';
 import {CarListings} from './_components/car-listing';
 
 export const metadata = {
-    title: "Settings | Vehicle Admin",
+    title: "Cars | Vehicle",
     description: "Browse and search for your dream car",
 };
 
 const CarsPage = async() => {
 
-
     const filtersData = await getCarFilters();
     return (
-        <div className='container mx-auto py-10'>
+        <div className='container mx-auto py-10 p-4'>
             <h1 className='text-6xl mb-4 gradient-title'>Browse Cars</h1>
 
             <div className='flex flex-col lg:flex-row gap-8'>

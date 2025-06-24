@@ -96,7 +96,6 @@ const HomeSearch = () => {
         },
         maxFiles: 1,
     })
-
     return (
         <div>
             <form onSubmit={handleTextSubmit}>

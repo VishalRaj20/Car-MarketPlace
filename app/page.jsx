@@ -14,7 +14,7 @@ export default async function Home() {
 
   const featuredCars = await getFeaturedCars();
   return (
-    <div className="pt-20 flex flex-col p-2">
+    <div className="pt-20 flex flex-col p-4">
       {/* Hero */}
 
       <section className="relative py-12 sm:py-16 md:py-28 dotted-background">
@@ -183,24 +183,27 @@ export default async function Home() {
 
       <section className="py-16 dotted-background text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4">
             Ready to find Your Dream Car?
           </h2>
-          <p>
+          <p className="text-base sm:text-lg max-w-xl mx-auto">
             Join thousands of satisfied customers who found their perfect vehicle through our platform.
           </p>
         </div>
-        <div className="flex flex-col sm:flex-row justify-center gap-4 mt-4">
-          <Button size='lg' variant='secondary'>
-            <Link href='/cars'>View All Cars</Link >
+
+        <div className="mt-6 flex flex-col sm:flex-row justify-center items-center gap-4">
+          <Button size="lg" variant="secondary" asChild>
+            <Link href="/cars">View All Cars</Link>
           </Button>
+
           <SignedOut>
-            <Button size='lg' asChild>
-              <Link href='/sign-up'>Sign Up Now</Link>
+            <Button size="lg" asChild>
+              <Link href="/sign-up">Sign Up Now</Link>
             </Button>
           </SignedOut>
         </div>
       </section>
+
     </div>
   );
 }
