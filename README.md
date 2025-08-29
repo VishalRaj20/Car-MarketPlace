@@ -95,17 +95,8 @@ npm run dev
 
 🧑‍💻 GitHub: https://github.com/VishalRaj20/
 
-<<<<<<< HEAD
-🌐 Portfolio: https://my-portfolio-fl7t.vercel.app/
-=======
-🌐 Portfolio: https://portfolio-iuef.vercel.app/
->>>>>>> e7e9fd2da4b391a6d5b34aa5ae707a299c2c9510
-
 📧 Email: vishalraj857808gmail.com
 
 🔗 LinkedIn: https://www.linkedin.com/in/vishal-raj-816485253/
-<<<<<<< HEAD
-=======
 
 📱 Telegram: https://t.me/vishal_raj20
->>>>>>> e7e9fd2da4b391a6d5b34aa5ae707a299c2c9510
