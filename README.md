@@ -58,10 +58,10 @@ The platform is designed for:
 
 ## 🧰 Tech Stack
 
-| Layer      | Tech Used                    |
+| Layer      | Tech Used                     |
 |------------|-------------------------------|
-| Frontend   | `React.js`, `Next.js`         |
-| Styling    | `ShadCN UI`   |
+| Frontend   | `Next.js`                     |
+| Styling    | `ShadCN UI`                   |
 | Icons      | `Lucide React`                |
 | Backend    | `Supabase` (PostgreSQL + Auth)|
 | Auth       | `Clerk.dev`                   |
