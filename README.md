@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚗 Car Marketplace Platform
 
-## Getting Started
+**A fully-featured car marketplace to explore, save, and test drive cars — powered by Supabase, Clerk, and an EMI calculator built-in!**
 
-First, run the development server:
+<p align="center">
+  <img src="https://github.com/VishalRaj20/Car-MarketPlace/blob/ae0938d584957121e03873ff1e1435e5ea2011c7/public/car1.png" alt="Car Marketplace Banner" width="100%" />
+</p>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📚 Table of Contents
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- [📖 About](#-about)
+- [🚀 Features](#-features)
+- [🧰 Tech Stack](#-tech-stack)
+- [📦 Installation](#-installation)
+- [🧪 Usage](#-usage)
+- [📸 Screenshots](#-screenshots)
+- [📬 Contact](#-contact)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
+
+## 📖 About
+
+**Car Marketplace** is a modern and powerful web application for browsing and managing car listings with user authentication, test drive bookings, saved cars, and a fully functional EMI Loan Calculator.
+
+The platform is designed for:
+
+- 🚘 Car buyers looking for flexible exploration & EMI options
+- 🏢 Dealerships to manage listings, bookings, and business operations
+- 🧑‍💼 Admins to control working hours, team roles, and real-time booking updates
+
+## 🚀 Features
+
+### 🧑‍💻 User-Focused Features
+- 🔐 Secure sign-in with **Clerk** using Google, GitHub, or email/password
+- 🔍 Advanced **filters**: make, model, fuel type, transmission, price, etc.
+- 💾 Save cars to **wishlist**
+- 📸 Visit full **car detail pages** with:
+  - High-resolution photos
+  - Make, Body Type, Transmission, Fuel Type
+  - Price, Year, Mileage
+  - ⭐ **EMI Loan Calculator** (Zero down payment, real-time updates)
 
 ## Learn More
+### 🛠️ Dealership/Admin Features
+- 📅 **Book or cancel test drives** with dealerships
+- 🧑‍💼 Assign **admin roles** to users
+- 🕒 Set **working hours** for test drives
+- 📊 **Dashboard** view for:
+  - Total cars: Available / Sold / Unavailable
+  - Test drive stats: Pending / Confirmed / Cancelled / Completed
 
-To learn more about Next.js, take a look at the following resources:
+## 🧰 Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+| Layer      | Tech Used                    |
+|------------|-------------------------------|
+| Frontend   | `React.js`, `Next.js`         |
+| Styling    | `ShadCN UI`   |
+| Icons      | `Lucide React`                |
+| Backend    | `Supabase` (PostgreSQL + Auth)|
+| Auth       | `Clerk.dev`                   |
+| Hosting    | `Vercel`                      |
+
+> Bonus: Built-in EMI Calculator with zero down payment formula!
+
+## 📸 Screenshots
+<p align="center">
+  <img src="https://github.com/VishalRaj20/Car-MarketPlace/blob/ae0938d584957121e03873ff1e1435e5ea2011c7/public/car5.png" alt="Car Marketplace Banner" width="100%" />
+  <img src="https://github.com/VishalRaj20/Car-MarketPlace/blob/ae0938d584957121e03873ff1e1435e5ea2011c7/public/car2.png" alt="Car Marketplace Banner" width="100%" />
+  <img src="https://github.com/VishalRaj20/Car-MarketPlace/blob/ae0938d584957121e03873ff1e1435e5ea2011c7/public/car3.png" alt="Car Marketplace Banner" width="100%" />
+  <img src="https://github.com/VishalRaj20/Car-MarketPlace/blob/ae0938d584957121e03873ff1e1435e5ea2011c7/public/car4.png" alt="Car Marketplace Banner" width="100%" />
+</p>
+
+## 📦 Installation
+```
+# 1. Clone the repo
+git clone https://github.com/VishalRaj20/Car-MarketPlace.git
+
+# 2. Move into the project folder
+cd project
+
+# 3. Install dependencies
+npm install
+
+# 4. Start development server
+npm run dev
+```
+## 📬 Contact
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🧑‍💻 GitHub: https://github.com/VishalRaj20/
 
 ## Deploy on Vercel
+🌐 Portfolio: https://my-portfolio-fl7t.vercel.app/
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+📧 Email: vishalraj857808gmail.com
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🔗 LinkedIn: https://www.linkedin.com/in/vishal-raj-816485253/
